@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CONCLO Hotels</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f9f9f9;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+    .hero {
+      background-image: url('https://loremflickr.com/1200/400/hotel');
+      background-size: cover;
+      background-position: center;
+      height: 400px;
+      position: relative;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      background: rgba(0, 0, 0, 0.5);
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+    .content {
+      padding: 2rem;
+      text-align: center;
+    }
+    .cta-button {
+      background-color: #003366;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .cta-button:hover {
+      background-color: #0055aa;
+    }
+    footer {
+      background: #003366;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h2>CONCLO Hotels</h2>
+  </header>
+
+  <section class="hero">
+    <h1>Experience Luxury & Comfort</h1>
+  </section>
+
+  <section class="content">
+    <h2>Welcome to CONCLO</h2>
+    <p>Book your perfect stay at the best prices with world-class amenities.</p>
+    <button class="cta-button" onclick="alert('Booking Coming Soon!')">Book Now</button>
+  </section>
+
+  <footer>
+    &copy; 2025 CONCLO Hotels Private Limited
+  </footer>
+  <script type='text/javascript'>
+	function initEmbeddedMessaging() {
+		try {
+			embeddedservice_bootstrap.settings.language = 'en_US'; // For example, enter 'en' or 'en-US'
+
+			embeddedservice_bootstrap.init(
+				'00Dfi000003jH9S',
+				'Hospitality_management_Services_1',
+				'https://conclohospitalitymanagement-dev-ed.develop.my.site.com/ESWHospitalitymanagement1750303824387',
+				{
+					scrt2URL: 'https://conclohospitalitymanagement-dev-ed.develop.my.salesforce-scrt.com'
+				}
+			);
+		} catch (err) {
+			console.error('Error loading Embedded Messaging: ', err);
+		}
+	};
+</script>
+<script type='text/javascript' src='https://conclohospitalitymanagement-dev-ed.develop.my.site.com/ESWHospitalitymanagement1750303824387/assets/js/bootstrap.min.js' onload='initEmbeddedMessaging()'></script>
+</body>
+</html>
